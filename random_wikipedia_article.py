@@ -31,3 +31,12 @@ print(summary[0:100]+"...")
 
 #Capta a resposta do usuário:
 user_option = input('\nPor favor preencha com S ou N:\n ')
+
+#Verifica se o usuário tem interesse no artigo indicado e, caso positivo abre o link do mesmo e, caso negativo abre um artigo aleatório na Wikipedia:
+if user_option.upper() == 'S':
+    link_wikipedia = 'https://en.wikipedia.org/wiki/'+ article_title
+    webbrowser.open(link_wikipedia)
+    print('Boa escolha!')
+else:
+    print('\nQue pena! Espero que este outro artigo seja do seu interesse então...')
+    webbrowser.open('https://en.wikipedia.org/wiki/Special:Random')
