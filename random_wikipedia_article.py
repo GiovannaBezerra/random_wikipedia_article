@@ -10,6 +10,7 @@
 import requests
 from bs4 import BeautifulSoup
 import webbrowser
+import time
 
 #Busca um artigo aleatório da Wikipedia:
 html_content = requests.get('https://en.wikipedia.org/wiki/Special:Random').content
@@ -35,8 +36,10 @@ user_option = input('\nPor favor preencha com S ou N:\n ')
 #Verifica se o usuário tem interesse no artigo indicado e, caso positivo abre o link do mesmo e, caso negativo abre um artigo aleatório na Wikipedia:
 if user_option.upper() == 'S':
     link_wikipedia = 'https://en.wikipedia.org/wiki/'+ article_title
-    webbrowser.open(link_wikipedia)
     print('Boa escolha!')
+    time.sleep(2)
+    webbrowser.open(link_wikipedia)
 else:
     print('\nQue pena! Espero que este outro artigo seja do seu interesse então...')
+    time.sleep(2)
     webbrowser.open('https://en.wikipedia.org/wiki/Special:Random')
