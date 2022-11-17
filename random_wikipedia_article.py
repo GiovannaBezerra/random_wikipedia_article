@@ -22,3 +22,12 @@ article_title = soup.title.string.replace(' - Wikipedia','')
 
 #Obtem um resumo (quando existir) do artigo com os cem primeiros caracteres:
 summary = soup.find("p").text
+
+#Pergunta ao usuário se ele gostaria de ler um artigo da Wikipedia:
+print('\nOlá, você gostaria de ler o seguinte artigo na Wikipedia?\n')
+print(article_title)
+print('Resumo:')
+print(summary[0:100]+"...")
+
+#Capta a resposta do usuário:
+user_option = input('\nPor favor preencha com S ou N:\n ')
