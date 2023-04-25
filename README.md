@@ -20,24 +20,13 @@ GIF
 
 ## How it Works  
 
-The library **requests** is used to find a random article in Wikipedia. Then, the HTML content was obtained using **BeautifulSoup**, which as used to extract article title and first one hundread characters from summary (when it exist).
-
-Next, a user interface was created using PySimpleGUI when the program asks the user if it would like to read some article from Wikipedia. If user clicks "Yes", the article link is open using webbrowser or a random article link is open if the user clicks "No". 
-
-
-import requests
-from bs4 import BeautifulSoup
-import webbrowser
-import time
-import PySimpleGUI as sg
-
-
-
+The HTTP library **requests** was used to find a random article on Wikipedia. Then, the HTML content was obtained using **BeautifulSoup**, which was also used to extract the title of the article and the first hundred characters of the abstract (if any).
+Afterwards, a user interface was created using **PySimpleGUI**. The program asks the user if he would like to read any Wikipedia articles and presents its title and summary. If the user clicks "Yes", the article link will be opened using **webbrowser** module or a random article link will be opened if the user clicks "No".
 
 In summary, we can divide the project into three stages:
 
-1. Get data tweets through Tweepy API
-2. Use TextBlob to detect polarity of text data
+1. Get random article from Wikipedia
+2. Use BeautifulSoup to extract article title and abstract
 3. Create user interface using PySimpleGUI
 
 
@@ -45,51 +34,36 @@ In summary, we can divide the project into three stages:
 
 ### Clone this repository
 ```
-git clone xxxxxx
+git clone https://github.com/GiovannaBezerra/random_wikipedia_article.git
 ```  
   
 ### Install development dependencies
 ```
-pip install pandas  
-pip install numpy  
-pip install tweepy  
-pip install -U textblob  
-pip install PySimpleGUI  
-pip install wordcloud  
-pip install matplotlib
-pip install PySimpleGUI
+requests
+beautifulsoup4
+webbrowser
+PySimpleGUI
 ```  
 
 
 ## How to use
 
-To start the interactive program open the python file **interactive_sentiment_analysis_twitter.py** in some IDE like VSCode, PyCharm and others.  
+After cloning the repository, to start the interactive program open the python file [random_wikipedia_article.py](https://github.com/GiovannaBezerra/random_wikipedia_article/blob/main/random_wikipedia_article.py) in some IDE like VSCode, PyCharm and others.  
 
 ...or use terminal to run the program.  
 
-![run_file](https://user-images.githubusercontent.com/44107852/215883432-40ab2c4c-7129-46c8-bf39-5f3dbe1da261.jpg)
+run-file
 
-Input your Twitter developer credentials and click Continue.
+The program opens the window with some wikipedia article read suggestion.
+read_suggestion_yes
 
-![input_credentials](https://user-images.githubusercontent.com/44107852/215883476-e17b19fc-e35e-421e-adeb-7c3cc1132787.jpg)
-
-Input some keyword and click Search.
-
-![window_search](https://user-images.githubusercontent.com/44107852/215883553-2d29cbaa-dbaa-473f-b2d5-76731cf0741f.jpg)
-
-The three most recents tweets are showed.
-
-Select a visualization and click Plot Visualization.
-
-Pie chart
-![pie_chart](https://user-images.githubusercontent.com/44107852/216157872-bb3f1ca0-754d-42e9-9307-4f184bf7518f.jpg)
+If the user clicks "Yes", the link is open:
+article1
 
 
-Positives
-![wordcloud_positives](https://user-images.githubusercontent.com/44107852/216157939-a693e962-e3d5-4224-b7c2-253bbcb48687.jpg)
+Or some random article if the user clicks "No":
 
-
-
+read_suggestion_no
 
 
 ## Notes and Considerations
