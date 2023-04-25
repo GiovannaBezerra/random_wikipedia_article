@@ -3,11 +3,9 @@
       
 # RANDOM WIKIPEDIA ARTICLE
 
-*under construction*
-
 This program searches Wikipedia and fetches a random article. Then it asks the user if he wants to read that article or not. If the answer is yes, the material is shown; otherwise, another random report is presented.
 
-The aim of this project is to develop skills and materialize theoretical knowledge into practical experience.
+The aim of this project is to develop new python skills and materialize theoretical knowledge into practical experience.
 
 <p align="center">
   <a href="#how-it-works">How it works</a> •
@@ -16,7 +14,7 @@ The aim of this project is to develop skills and materialize theoretical knowled
   <a href="#notes-and-considerations">Notes and considerations</a> •
 </p>
 
-GIF
+![gif](https://user-images.githubusercontent.com/44107852/234350913-32905da6-1ef0-4ada-b288-389e2fe0654d.gif)
 
 ## How it Works  
 
@@ -52,35 +50,22 @@ After cloning the repository, to start the interactive program open the python f
 
 ...or use terminal to run the program.  
 
-run-file
+![run-file](https://user-images.githubusercontent.com/44107852/234305069-6348f53f-d7b2-4b1b-9f6e-7da2d892571f.jpg)
 
-The program opens the window with some wikipedia article read suggestion.
-read_suggestion_yes
+The program opens the window with some Wikipedia article read suggestion.
 
-If the user clicks "Yes", the link is open:
-article1
+![read_suggestion_yes](https://user-images.githubusercontent.com/44107852/234305184-a95d82da-da3d-458b-8225-9c2074238645.jpg)
 
+If the user clicks "Yes", the indicated article link will be opened:
 
-Or some random article if the user clicks "No":
+![article1](https://user-images.githubusercontent.com/44107852/234305278-f577ef90-005c-44e6-b66d-7fdb6dc5d659.jpg)
 
-read_suggestion_no
+Or some random article will open if the user clicks "No":
+
+![read_suggestion_no](https://user-images.githubusercontent.com/44107852/234305366-4f53730e-ca36-4502-bb77-988022ab451b.jpg)
 
 
 ## Notes and Considerations
 
-At this point the TextBlob library works only to analysis in English. So....
-
-During this development, I've learned how to use Dash and Plotly libraries, which was very challenging for me, in particular because of layout building and callbacks construction.
-
-
-
-
-
-This is an apt project for those developers at the intermediary level looking to further their careers by developing creative and complex Python programs. 
-
-which beginners can work on to put their Python knowledge to the test.
-
-Developing real-world projects is the best way to hone your skills and materialize your theoretical knowledge into practical experience. 
-
-
-You will need to acquaint yourself with new tools and technologies while working on a python project. The more you learn about cutting-edge development tools, environments, and libraries, the broader will be your scope for experimentation with your projects. 
+During this development, I had the opportunity to improve my Python Skills and learn more about PySimpleGUI as a user interface. 
+That way, I was able to acquaint myself with new tools, technologies, environments, and libraries while working on a real-world project.
