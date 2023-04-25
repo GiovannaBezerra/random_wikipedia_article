@@ -5,13 +5,16 @@
 
 This program searches Wikipedia and fetches a random article. Then it asks the user if he wants to read that article or not. If the answer is yes, the material is shown; otherwise, another random report is presented.
 
+
+<img src="https://user-images.githubusercontent.com/44107852/234355237-005e3ad1-17ef-48b8-af1d-a27e3aec35bb.png" 
+align="left" alt="imdb logo" width="30" height="30">
 The aim of this project is to develop new python skills and materialize theoretical knowledge into practical experience.
 
 <p align="center">
   <a href="#how-it-works">How it works</a> •
   <a href="#installation-and-configuration">Installation and configuration</a> •
   <a href="#how-to-use">How to use</a> •
-  <a href="#notes-and-considerations">Notes and considerations</a> •
+  <a href="#notes-and-considerations">Notes and considerations</a>
 </p>
 
 ![gif](https://user-images.githubusercontent.com/44107852/234350913-32905da6-1ef0-4ada-b288-389e2fe0654d.gif)
@@ -69,3 +72,6 @@ Or some random article will open if the user clicks "No":
 
 During this development, I had the opportunity to improve my Python Skills and learn more about PySimpleGUI as a user interface. 
 That way, I was able to acquaint myself with new tools, technologies, environments, and libraries while working on a real-world project.
+
+### References
+https://www.upgrad.com/blog/python-projects-ideas-topics-beginners/
